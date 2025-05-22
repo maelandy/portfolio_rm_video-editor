@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/output.css" />
+    <!-- animate aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio RM</title>
+  </head>
+  <body class="bg-background text-white transition duration-300 ease-in-out">
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+      <div class="container md:mx-25">
+        <div class="flex items-center justify-between relative">
+          <div class="max-[768px]:ml-8">
+            <a href="#home" class="font-bold text-4xl text-yellow block py-6">RM</a>
+          </div>
+          <div class="flex items-center">
+            <button id="hamburger" name="hamburger" type="button" class="block absolute md:hidden right-8 cursor-pointer">
+              <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+            </button>
+            <nav id="nav-menu" class="hidden absolute py-3 bg-background shadow-lg rounded-lg max-w-[200px] right-8 w-full top-full md:block md:static md:bg-transparent md:max-w-full md:shadow-none md:rounded-none">
+              <ul class="transition duration-300 ease-in-out block md:flex md:font-medium lg:font-semibold">
+                <li class="group">
+                  <a href="#home" class="transition duration-300 ease-in-out py-2 px-2 lg:mx-8 md:mx-4 flex hover:text-yellow">Beranda</a>
+                </li>
+                <li class="group">
+                  <a href="#tentangSaya" class="transition duration-300 ease-in-out py-2 px-2 lg:mx-8 md:mx-4 flex hover:text-yellow">Tentang saya</a>
+                </li>
+                <li class="group">
+                  <a href="#pencapaian" class="transition duration-300 ease-in-out py-2 px-2 lg:mx-8 md:mx-4 flex hover:text-yellow">Pencapaian</a>
+                </li>
+                <li class="group">
+                  <a href="#kontakSaya" class="transition duration-300 ease-in-out py-2 px-2 lg:mx-8 md:mx-4 flex hover:text-yellow">Kontak saya</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- desktop device -->
+    <main class="md:mx-25 lg:pt-35 md:pt-36 pt-15 mx-8" id="home">
+      <div class="md:flex md:justify-between block mt-15">
+        <div class="min-[375px]:hidden min-[200px]:hidden min-[768px]:contents">
+          <div class="w-130 flex flex-col justify-center slide-1">
+            <h1 class="text-light font-medium lg:text-xl md:text-lg">
+              Halo, Saya
+              <span class="block lg:text-5xl md:text-[2.1rem] lg:my-2 font-[900]">Raka Maelandy</span>
+            </h1>
+            <p class="lg:text-xl md:text-lg font-semibold"><span class="text-gray-300">Student</span> | Video Editor</p>
+            <p class="lg:text-lg md:text-md leading-relaxed lg:mt-3 md:mt-1">Saya mahasiswa informatika dari Universitas Pembangunan Jaya (UPJ) Tangsel, Banten.</p>
+            <div class="mt-6 lg:mt-23 md:mt-15">
+              <a href="src/rm-cv.pdf" target="_blank">
+                <button class="py-3 px-10 cursor-pointer transition duration-300 ease-in-out outline-1 outline-yellow text-background text-xl font-bold hover:text-yellow bg-yellow hover:bg-background rounded-full">CV</button>
+              </a>
+            </div>
+          </div>
+          <div class="">
+            <img src="src/img/profile.png" class="lg:w-100 md:w-150 drop-shadow-3xl" />
+          </div>
+        </div>
+        <!-- mobile device -->
+        <div class="md:hidden">
+          <div class="w-full flex flex-col justify-center">
+            <div class="m-auto">
+              <img src="src/img/profile.png" class="w-70" />
+            </div>
+            <div class="mt-10 text-center">
+              <h1 class="text-light font-medium text-xl">Hello, I'm <span class="block text-3xl my-2 font-[900]">Raka Maelandy</span></h1>
+              <p class="text-xl font-semibold"><span class="text-gray-300">Student</span> | Video Editor</p>
+              <p class="text-lg max-[768px]:mt-4 max-[768px]:w-75 max-[768px]:m-auto">Saya mahasiswa informatika dari Universitas Pembangunan Jaya (UPJ), Selatan Tanggerang, Banten.</p>
+              <div class="mt-6">
+                <a href="src/rm-cv.pdf" target="_blank">
+                  <button class="py-3 px-10 cursor-pointer transition duration-300 ease-in-out outline-1 outline-yellow text-background text-xl font-bold hover:text-yellow bg-yellow hover:bg-background rounded-full">CV</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- tentang rm -->
+      <section class="md:pt-42 pt-40" id="tentangSaya">
+        <div class="w-full">
+          <h1 class="text-yellow lg:text-5xl md:text-[1.9rem] max-[768px]:text-center text-3xl font-[900]" data-aos="fade" data-aos-duration="1000" data-aos-delay="300">Tentang saya</h1>
+          <p class="lg:leading-relaxed lg:w-180 max-w-full text-base text-justify lg:my-4 my-2" data-aos="fade" data-aos-duration="1000" data-aos-delay="300">Saya adalah fresh graduate SMA dengan semangat tinggi untuk terus berkembang. Saya memiliki hobi editing video, yang memungkinkan saya menyalurkan kreativitas dalam menghasilkan visual yang menarik. Selain itu, saya juga aktif berolahraga, seperti angkat beban dan jogging, untuk menjaga kesehatan dan kebugaran tubuh. Saya selalu antusias dalam mengulik hal baru dan memiliki kemampuan belajar secara otodidak, yang membuat saya cepat beradaptasi dan mengembangkan keterampilan baru. Dengan prestasi yang telah saya raih, saya siap menghadapi tantangan berikutnya dan terus bertumbuh!</p>
+          <p class="text-gray-300 lg:text-[1.5rem] text-xl font-semibold lg:w-105 lg:absolute max-w-full" data-aos="fade" data-aos-duration="2000" data-aos-delay="500">Berikut ini adalah pendidikan saya:</p>
+          <div class="lg:ml-97 lg:mt-[19px] xl:w-200 mt-2 max-w-full text-justify" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+            <ul class="list-disc ml-4">
+              <li class="pb-5 text-yellow">
+                <div class="lg:text-[1.3rem] text-base text-white font-semibold">Taman Kanak-kanak <span class="text-yellow italic">(TK)</span></div>
+                <div class="text-gray-200 lg:text-lg text-base">Saya lulusan dari TK Nurunnisa tahun pelajaran 2012-2013</div>
+              </li>
+              <li class="pb-5 text-yellow">
+                <div class="lg:text-[1.3rem] text-base text-white font-semibold">Sekolah Dasar <span class="text-yellow italic">(SD)</span></div>
+                <div class="text-gray-200 lg:text-lg text-base">Saya lulusan dari SD Negeri Pondok pucung 01 Kota Tangerang Selatan tahun pelajaran 2018-2019</div>
+              </li>
+              <li class="pb-5 text-yellow">
+                <div class="lg:text-[1.3rem] text-base text-white font-semibold">Sekolah Menengah Pertama <span class="text-yellow italic">(SMP)</span></div>
+                <div class="text-gray-200 lg:text-lg text-base">Saya lulusan dari SMP Negeri 12 Kota Tangerang Selatan tahun pelajaran 2019-2022</div>
+              </li>
+              <li class="pb-5 text-yellow">
+                <div class="lg:text-[1.3rem] text-base text-white font-semibold">Sekolah Menengah Atas <span class="text-yellow italic">(SMA)</span></div>
+                <div class="text-gray-200 lg:text-lg text-base">Saya lulusan dari SMA Negeri 10 Kota Tangerang Selatan tahun pelajaran 2022-2025 dengan jurusan yang sama ambil yaitu Ilmu Pengetahuan Sosial (IPS)</div>
+              </li>
+              <li class="pb-5 text-yellow">
+                <div class="lg:text-[1.3rem] text-base font-semibold">Kuliah</div>
+                <div class="text-gray-200 lg:text-lg text-base">Saat ini saya aktif sebagai mahasiswa di Universitas Pembangunan Jaya dengan prodi yang saya ambil yaitu Informatika</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- dekstop device pencapaian -->
+      <article class="lg:pt-35 pt-15 min-[375px]:pt-35" id="pencapaian">
+        <div class="max-w-full">
+          <h1 class="text-5xl text-yellow font-bold min-[375px]:text-center md:text-left" data-aos="fade" data-aos-duration="1000" data-aos-delay="400">Pencapaian</h1>
+          <div class="flex mt-7 gap-x-10 absolute max-lg:hidden lg:w-225">
+            <div class="" data-aos="fade" data-aos-duration="1000" data-aos-delay="300">
+              <figure>
+                <img src="src/img/fls2n.jpg" class="w-50 rounded-lg border-1 border-dashed border-yellow drop-shadow-3xl drop-shadow-yellow" />
+                <figcaption class="font-medium mt-1" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">25 Mei 2023</figcaption>
+              </figure>
+            </div>
+            <div class="" data-aos="fade" data-aos-duration="1000" data-aos-delay="300">
+              <figure>
+                <img src="src/img/batik.jpeg" class="w-50 rounded-lg border-1 border-dashed border-yellow drop-shadow-3xl drop-shadow-yellow" />
+                <figcaption class="font-medium mt-1" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">2 Oktober, 2023</figcaption>
+              </figure>
+            </div>
+            <div>
+              <ul class="" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
+                <li>
+                  <div class="text-light text-xl font-[700] underline underline-offset-4">25 Mei 2023</div>
+                  <div class="text-lg text-gray-300 font-medium">Juara 1 Film Pendek FLS2N 2023 tingkat Kota Tangerang Selatan</div>
+                  <p class="text-gray-300 text-lg font-medium">Posisi: <span class="text-white">Sebagai Video Editor</span></p>
+                </li>
+                <li class="mt-3">
+                  <div class="text-light text-xl font-[700] underline underline-offset-4">2 Oktober 2023</div>
+                  <div class="text-lg text-gray-300 font-medium">Juara 1 Video Kreativitas pada hari batik nasional di SMA Negeri 10 Kota Tangerang Selatan</div>
+                  <p class="text-gray-300 text-lg font-medium">
+                    Posisi:
+                    <span class="text-white">Sebagai Videographer sekaligus Video Editor</span>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- mobile device pencapaian -->
+          <div class="flex mt-7 gap-x-10 absolute lg:hidden">
+            <div class="flex flex-col" data-aos="fade-left" data-aos-duration="1100" data-aos-delay="500">
+              <figure>
+                <img src="src/img/fls2n.jpg" class="md:max-w-60 min-[375px]:max-w-35 rounded-lg border-1 border-dashed border-yellow drop-shadow-3xl drop-shadow-yellow" />
+                <figcaption class="font-medium mt-1 min-[375px]:text-[13px] md:text-base" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="1000">25 Mei 2023</figcaption>
+              </figure>
+              <figure class="min-[375px]:mt-4">
+                <img src="src/img/batik.jpeg" class="md:max-w-60 min-[375px]:max-w-35 rounded-lg border-1 border-dashed border-yellow drop-shadow-3xl drop-shadow-yellow" />
+                <figcaption class="font-medium mt-1 min-[375px]:text-[13px] md:text-base" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="1000">2 Oktober, 2023</figcaption>
+              </figure>
+            </div>
+            <div class="md:pr-25 min-[375px]:pr-8">
+              <ul class="md:text-justify min-[375px]:text-left" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="1000">
+                <li>
+                  <div class="text-light md:text-xl font-[700] underline underline-offset-4">25 Mei 2023</div>
+                  <div class="md:text-lg min-[375px]:text-sm text-gray-300 font-medium">Juara 1 Film Pendek FLS2N 2023 tingkat Kota Tangerang Selatan</div>
+                  <p class="text-gray-300 md:text-lg min-[375px]:text-sm font-medium">Posisi: <span class="text-white">Sebagai Video Editor</span></p>
+                </li>
+                <li class="md:mt-60 min-[375px]:mt-20 min-[400px]:mt-25 min-[420px]:mt-30 min-[447px]:mt-35 min-[650px]:mt-40">
+                  <div class="text-light md:text-xl font-[700] underline underline-offset-4">2 Oktober 2023</div>
+                  <div class="md:text-lg min-[375px]:text-sm text-gray-300 font-medium">Juara 1 Video Kreativitas pada hari batik nasional di SMA Negeri 10 Kota Tangerang Selatan</div>
+                  <p class="text-gray-300 md:text-lg min-[375px]:text-sm font-medium">
+                    Posisi:
+                    <span class="text-white">Sebagai Videographer sekaligus Video Editor</span>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- dekstop device prov -->
+          <div class="lg:my-5 lg:mt-95 md:mt-190 min-[375px]:mt-125 flex justify-between items-center max-lg:gap-x-8 lg:gap-x-5">
+            <div class="w-full max-xl:hidden">
+              <img src="src/img/prov-2.jpeg" class="lg:max-w-100 md:max-w-65 min-[375px]:max-w-40 rounded-lg border-1 border-dashed border-yellow drop-shadow-3xl drop-shadow-yellow" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700" />
+            </div>
+            <div class="text-justify min-[375px]:w-max-full mx-auto">
+              <p class="leading-relaxed lg:text-xl text-light lg:font-semibold min-[375px]:font-medium min-[375px]:text-sm md:text-lg md:font-semibold" data-aos="fade" data-aos-duration="1000" data-aos-delay="400">Setelah Juara 1 Film Pendek FLS2N 2023 tingkat Kota Tangerang Selatan, lanjut mewakili Kota Tangerang Selatan di FLS2N 2023 tingkat Provinsi Banten. Lomba berlangsung dari tanggal 10 sampai 13 Juli 2023, bertempat di Hotel The Royale Krakatau, Kota Cilegon, Banten.</p>
+            </div>
+            <div class="mx-auto">
+              <div class="mb-10">
+                <img src="src/img/prov-1.jpeg" class="lg:max-w-100 md:max-w-65 min-[375px]:max-w-40 rounded-lg border-1 border-dashed border-yellow drop-shadow-3xl drop-shadow-yellow" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="700" />
+              </div>
+              <div class="w-full min-xl:hidden">
+                <img src="src/img/prov-2.jpeg" class="lg:max-w-100 md:max-w-65 min-[375px]:max-w-40 rounded-lg border-1 border-dashed border-yellow drop-shadow-3xl drop-shadow-yellow" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="700" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- mobile device prov -->
+        <div class="mt-15 flex flex-col justify-center items-center relative" data-aos="zoom-in" data-aos-duration="900" data-aos-delay="500">
+          <p class="text-3xl text-center font-bold text-yellow text-shadow-lg">Video Portfolio</p>
+          <video controls class="mt-5 rounded-lg w-150">
+            <source src="src/vid/portfolio_rm.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </article>
+    </main>
+    <footer class="md:mx-25 mt-15 mb-10 max-w-full h-30 flex flex-col justify-center items-center" id="kontakSaya" data-aos="fade" data-aos-duration="1200" data-aos-delay="500">
+      <h1 class="text-center text-3xl text-yellow font-[750]">Kontak saya</h1>
+      <div class="text-center my-3 md:grid md:grid-cols-3 min-[375px]:grid min-[375px]:grid-cols-1 sm:grid sm:grid-cols-2 lg:grid lg:grid-cols-5 md:h-screen">
+        <div class="transition duration-300 ease-in-out hover:underline underline-offset-4 lg:text-lg text-base font-medium">
+          <a href="https://www.instagram.com/rkamaelndy/" class="px-2 transition duration-300 ease-in-out cursor-pointer hover:text-light"> <i class="fa-brands fa-instagram px-1 font-[900]"></i>rkamaelndy </a>
+        </div>
+        <div class="transition duration-300 ease-in-out hover:underline underline-offset-4 lg:text-lg text-base font-medium">
+          <a href="https://www.tiktok.com/@rkamaelndy" class="px-2 transition duration-300 ease-in-out cursor-pointer hover:text-light"> <i class="fa-brands fa-tiktok px-1 font-[900]"></i>rkamaelndy </a>
+        </div>
+        <div class="transition duration-300 ease-in-out hover:underline underline-offset-4 lg:text-lg text-base font-medium">
+          <a href="https://www.linkedin.com/in/raka-maelandy-6b61a3336/" class="px-2 transition duration-300 ease-in-out cursor-pointer hover:text-light"> <i class="fa-brands fa-linkedin px-1 font-[900]"></i>raka maelandy </a>
+        </div>
+        <div class="transition duration-300 ease-in-out hover:underline underline-offset-4 lg:text-lg text-base font-medium">
+          <a href="https://wa.me/6285710823818" class="px-2 transition duration-300 ease-in-out cursor-pointer hover:text-light"> <i class="fa-brands fa-whatsapp px-1 font-[900]"></i>0857-1082-3818 </a>
+        </div>
+        <div class="transition duration-300 ease-in-out hover:underline underline-offset-4 lg:text-lg text-base font-medium">
+          <a href="https://github.com/maelandy" class="px-2 transition duration-300 ease-in-out cursor-pointer hover:text-light"> <i class="fa-brands fa-github px-1 font-[900]"></i>maelandy </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="portfolio.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

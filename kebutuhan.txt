@@ -1,0 +1,11 @@
+font family
+- open sans
+- inter
+- Montserrat
+
+color
+primary : #0872BF
+background : #141A1A
+
+svg belakang foto
+blobmake.app
